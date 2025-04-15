@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  hadoop-hbase:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: hadoop-hbase
+    hostname: hadoop-hbase
+    restart: always
+    ports:
+      - "9870:9870"  # HDFS Web UI
+      - "8088:8088"  # YARN Web UI
+      - "9000:9000"  # HDFS 
+      - "16010:16010"  # HBase Web UI
+    volumes:
+      - hadoop-data:/usr/local/hadoop/tmp
+      - hbase-data:/usr/local/hbase/data
+    tty: true
+    stdin_open: true
+
+volumes:
+  hadoop-data:
+  hbase-data:

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>hbase.rootdir</name>
+    <value>hdfs://localhost:9000/hbase</value>
+  </property>
+  <property>
+    <name>hbase.cluster.distributed</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hbase.unsafe.stream.capability.enforce</name>
+    <value>false</value>
+  </property>
+  <property>
+  <name>zookeeper.session.timeout</name>
+  <value>120000</value>
+  <description>ZooKeeper session timeout in milliseconds</description>
+</property>
+<property>
+  <name>hbase.client.retries.number</name>
+  <value>10</value>
+</property>
+<property>
+  <name>hbase.rpc.timeout</name>
+  <value>60000</value>
+</property>
+</configuration>
