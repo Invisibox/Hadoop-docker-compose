@@ -1,3 +1,1 @@
-packages/hadoop-3.3.6.tar.gz
-packages/hbase-2.5.11-hadoop3-bin.tar.gz
-packages/jdk-8u201-linux-x64.tar.gz
+packages/*

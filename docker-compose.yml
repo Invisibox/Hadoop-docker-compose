@@ -9,6 +9,7 @@ services:
     hostname: hadoop-hbase
     restart: always
     ports:
+      - "2222:22"  # SSH
       - "9870:9870"  # HDFS Web UI
       - "8088:8088"  # YARN Web UI
       - "9000:9000"  # HDFS 

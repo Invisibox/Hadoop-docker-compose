@@ -69,4 +69,4 @@ docker exec -it hadoop-hbase bash
 
 ## 用户信息
 
-容器默认使用 hadoop 用户，密码为空
+容器默认使用 hadoop 用户，密码 hadoop，可无密码执行 sudo。
