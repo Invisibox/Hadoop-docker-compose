@@ -38,7 +38,7 @@ cd ..
 podman-compose up -d
 ```
 
-或使用 Docker（未测试）:
+或使用 Docker:
 
 ```bash
 docker-compose up -d
